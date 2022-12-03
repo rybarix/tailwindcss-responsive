@@ -16,6 +16,7 @@
     "fontsizes"
   ],
   "author": "@SandroRybarik",
+  "repository": "https://github.com/SandroRybarik/tailwindcss-responsive",
   "license": "MIT",
   "devDependencies": {
     "tailwindcss": "^3.2.4"
