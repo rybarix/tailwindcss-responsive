@@ -1,0 +1,23 @@
+{
+  "name": "tailwindcss-responsive",
+  "version": "1.0.0",
+  "description": "Generates responsive padding, margin, font size properties.",
+  "main": "index.js",
+  "scripts": {
+    "publish": "npm publish",
+    "build": "npx tailwindcss -i ./src/style.css -o ./dist/output.css"
+  },
+  "keywords": [
+    "tailwindcss",
+    "responsive",
+    "padding",
+    "breakpoints",
+    "margins",
+    "fontsizes"
+  ],
+  "author": "@SandroRybarik",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
