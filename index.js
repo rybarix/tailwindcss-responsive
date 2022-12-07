@@ -88,12 +88,15 @@ function tailwindcssResponsivePlugin() {
   
             // go over all screens
             screensExceptDefault.forEach(([screen, ]) => {
-              // put in all props
-              cssProps.forEach(cssProp => {
-                fo[`@media (min-width: ${themeScreens[screen]})`] = {
-                  [cssProp]: mediaQueryValue(screen, value)
-                }
+              // put all props in one object
+              let css = {}
+              cssProps.forEach(prop => {
+                css[prop] = mediaQueryValue(screen, value)
               })
+
+              fo[`@media (min-width: ${themeScreens[screen]})`] = {
+                ...css
+              }
             })
   
             return fo
