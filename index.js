@@ -47,9 +47,12 @@ function tailwindcssResponsivePlugin() {
     const createResponsiveCssProp = (propMap, confPropName, valuesSource) => {
       const themeScreens = theme('screens')
       const screenTuples = Object.entries(themeScreens).sort(([, aval], [, bval]) => {
-        if (aval > bval) {
+        const faval = parseFloat(aval)
+        const fbval = parseFloat(bval)
+
+        if (faval > fbval) {
           return 1
-        } else if (aval < bval) {
+        } else if (faval < fbval) {
           return -1
         }
         return 0

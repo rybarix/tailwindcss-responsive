@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-responsive",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generates responsive padding, margin, font size properties.",
   "main": "index.js",
   "scripts": {
